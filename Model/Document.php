@@ -61,7 +61,7 @@ class Document
     /**
      * @var SepaData
      */
-    protected $sepaData;
+    protected $SEPAData;
 
     /**
      * @param OptionsResolver $resolver
@@ -353,7 +353,7 @@ class Document
      */
     public function setSepaData(?SepaData $sepaData): self
     {
-        $this->sepaData = $sepaData;
+        $this->SEPAData = $sepaData;
 
         return $this;
     }
@@ -363,6 +363,6 @@ class Document
      */
     public function getSepaData(): ?SepaData
     {
-        return $this->sepaData;
+        return $this->SEPAData;
     }
 }
