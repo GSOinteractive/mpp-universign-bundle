@@ -36,7 +36,7 @@ class SepaData
     /**
      * @var bool
      */
-    protected $recuring;
+    protected $recurring;
 
     /**
      * @var SepaThirdParty
@@ -105,7 +105,7 @@ class SepaData
             ->setIcs($resolvedOptions['ics'])
             ->setIban($resolvedOptions['iban'])
             ->setBic($resolvedOptions['bic'])
-            ->setRecuring($resolvedOptions['recurring'])
+            ->setRecurring($resolvedOptions['recurring'])
             ->setDebtor($resolvedOptions['debtor'])
             ->setCreditor($resolvedOptions['creditor'])
         ;
@@ -192,13 +192,13 @@ class SepaData
     }
 
     /**
-     * @param bool|null $recuring
+     * @param bool|null $recurring
      *
      * @return self
      */
-    public function setRecuring(?bool $recuring): self
+    public function setRecurring(?bool $recurring): self
     {
-        $this->recuring = $recuring;
+        $this->recurring = $recurring;
 
         return $this;
     }
@@ -206,9 +206,9 @@ class SepaData
     /**
      * @return bool|null
      */
-    public function getRecuring(): ?bool
+    public function getRecurring(): ?bool
     {
-        return $this->recuring;
+        return $this->recurring;
     }
 
     /**
